@@ -1,0 +1,19 @@
+.navbar {
+  justify-content: space-between;
+  padding: 30px 20px 0 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul a {
+  text-decoration: none;
+}
+
+.navbar > div:has(ul) {
+  min-width: 50%;
+}
