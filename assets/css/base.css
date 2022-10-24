@@ -8,10 +8,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  --fel-page-color: rgb(174, 174, 182);
+  --fel-navbar-color: rgb(204, 255, 102);
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
 
 .flex-container {
   display: flex;
+}
+
+.content {
+  min-height: 100vh;
+  background-color: var(--fel-page-color);
 }
