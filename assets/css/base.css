@@ -11,6 +11,13 @@
 :root {
   --fel-page-color: rgb(174, 174, 182);
   --fel-navbar-color: rgb(204, 255, 102);
+  --fel-footer-color: rgb(58, 58, 58);
+
+  --fel-navbar-h2-colorgrad-1: rgb(48, 201, 28);
+  --fel-navbar-h2-colorgrad-2: rgb(33, 24, 160);
+
+  --fel-footer-author-color: rgb(255, 255, 255);
+  --fel-footer-desc-color: rgb(192, 192, 192);
 }
 
 body {
@@ -24,4 +31,7 @@ body {
 .content {
   min-height: 100vh;
   background-color: var(--fel-page-color);
+  display: grid;
+
+  grid-template-rows: 1fr 8fr 1fr;
 }
