@@ -9,7 +9,12 @@
 }
 
 .navbar {
-  background-color: var(--fel-navbar-color);
+  /* background-color: var(--fel-navbar-color); */
+  background-image: linear-gradient(
+    to bottom right,
+    var(--fel-navbar-color),
+    var(--fel-navbar-color2)
+  );
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.07);
@@ -47,6 +52,7 @@
   position: relative;
   font-weight: 500;
   font-size: 1.35rem;
+  color: var(--fel-navbar-a-color);
 }
 
 .navbar ul a::before {
