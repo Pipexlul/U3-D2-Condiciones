@@ -8,7 +8,7 @@ const allStyles = ["incorrect-pass", "correct-pass1", "correct-pass2"];
 // Helper Funcs
 const fillSelects = () => {
   passSelects.forEach((sel, idx) => {
-    for (let i = 0; i < 10; i++) {
+    for (let i = 1; i < 10; i++) {
       const optionElem = document.createElement("option");
       optionElem.value = optionElem.textContent = i;
 
