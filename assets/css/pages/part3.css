@@ -1,0 +1,16 @@
+.main-display {
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.correct-pass1 {
+  color: green;
+}
+
+.correct-pass2 {
+  color: blue;
+}
+
+.incorrect-pass {
+  color: red;
+}
