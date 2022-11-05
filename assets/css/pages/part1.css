@@ -1,0 +1,11 @@
+.element-pic {
+  max-width: 300px;
+}
+
+.main-display {
+  justify-content: space-evenly;
+}
+
+.added-border {
+  border: solid 2px red;
+}
