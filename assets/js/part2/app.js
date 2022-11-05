@@ -1,3 +1,4 @@
+// DOM Nodes
 const inputs = document.querySelectorAll(".part2-input");
 
 const stickerResponse = document.querySelector("#sticker-response");
@@ -9,6 +10,7 @@ const stickerMap = new Map([
   [3, "Instagram"],
 ]);
 
+// Helper Funcs
 const setInvalidResult = (resultObj, errorMsg) => {
   resultObj.valid = false;
   resultObj.errorReason = errorMsg;
@@ -83,6 +85,7 @@ const validateSingleNum = (num) => {
   return result;
 };
 
+// Events
 stickerButton.addEventListener("click", (ev) => {
   const result = validateNums(inputs, validateSingleNum);
 

@@ -1,9 +1,11 @@
+// DOM Nodes
 const button = document.querySelector("#button-border");
 const buttonText = document.querySelector("#button-text");
 const targetPic = document.querySelector("#part1-pic");
 
 let btnState = false;
 
+// Events
 button.addEventListener("click", (ev) => {
   let btnWord;
 

@@ -1,9 +1,11 @@
+// DOM Nodes
 const passSelects = document.querySelectorAll(".part3-select");
 const passButton = document.querySelector("#part3-button");
 const passResponse = document.querySelector("#part3-response");
 
 const allStyles = ["incorrect-pass", "correct-pass1", "correct-pass2"];
 
+// Helper Funcs
 const fillSelects = () => {
   passSelects.forEach((sel, idx) => {
     for (let i = 0; i < 10; i++) {
@@ -53,6 +55,7 @@ const applyStyle = (node, idx) => {
   node.classList.add(allStyles[idx]);
 };
 
+// Events
 passButton.addEventListener("click", (ev) => {
   const values = getPassValues();
 
@@ -64,4 +67,5 @@ passButton.addEventListener("click", (ev) => {
   passResponse.textContent = result.response;
 });
 
+// Setup
 fillSelects();
