@@ -5,10 +5,11 @@ const targetPic = document.querySelector("#part1-pic");
 let btnState = false;
 
 button.addEventListener("click", (ev) => {
-  let btnWord = "añadir";
+  let btnWord;
 
   if (btnState) {
     targetPic.classList.remove("added-border");
+    btnWord = "añadir";
   } else {
     targetPic.classList.add("added-border");
     btnWord = "remover";

@@ -1,0 +1,49 @@
+.part2-content {
+  display: grid;
+  grid-template-areas:
+    "pic1   pic2      pic3"
+    "input1 input2    input3"
+    ".      response  ."
+    ".      button    .";
+  row-gap: 10px;
+  column-gap: 25px;
+  justify-items: center;
+  align-items: center;
+}
+
+.part2-pic {
+  max-width: 200px;
+}
+
+.part2-pic:nth-child(1) {
+  grid-area: pic1;
+}
+
+.part2-pic:nth-child(2) {
+  grid-area: pic2;
+}
+
+.part2-pic:nth-child(3) {
+  grid-area: pic3;
+}
+
+.part2-input:nth-child(1) {
+  grid-area: input1;
+}
+
+.part2-input:nth-child(2) {
+  grid-area: input2;
+}
+
+.part2-input:nth-child(3) {
+  grid-area: input3;
+}
+
+#sticker-response {
+  grid-area: response;
+  margin: 20px 0;
+}
+
+#sticker-button {
+  grid-area: button;
+}
