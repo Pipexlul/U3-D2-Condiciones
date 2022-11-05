@@ -102,6 +102,7 @@ stickerButton.addEventListener("click", (ev) => {
       stickerResponse.textContent = "Llevas demasiados stickers!";
     }
   } else {
+    stickerResponse.textContent = "";
     alert(result.errorReason);
   }
 });
