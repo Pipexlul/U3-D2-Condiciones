@@ -9,3 +9,7 @@
 .added-border {
   border: solid 2px red;
 }
+
+#button-border-alt {
+  border: none;
+}

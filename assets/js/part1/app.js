@@ -1,12 +1,12 @@
 // DOM Nodes
 const button = document.querySelector("#button-border");
+const buttonAlt = document.querySelector("#button-border-alt");
 const buttonText = document.querySelector("#button-text");
 const targetPic = document.querySelector("#part1-pic");
 
 let btnState = false;
 
-// Events
-button.addEventListener("click", (ev) => {
+const clickHandler = (ev) => {
   let btnWord;
 
   if (btnState) {
@@ -20,4 +20,8 @@ button.addEventListener("click", (ev) => {
   buttonText.textContent = btnWord;
 
   btnState = !btnState;
-});
+};
+
+// Events
+button.addEventListener("click", clickHandler);
+buttonAlt.addEventListener("click", clickHandler);
